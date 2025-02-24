@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Figueroa Portfolio</title>
+    <title>Juan Figueroa</title>
+    <link rel="stylesheet" href="home.css">
     <script>
         fetch('/Week_3/swe-hp-html-project-figueroa/components/navbar.html')
             .then(response => response.text())
@@ -15,21 +16,16 @@
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
 </head>
+
 <body>
     <div id="navbar"></div>
-    <div class="Projects">
-        <h1 class = "">Projects</h1>
-        <div class="listed-project">
-            <h2>Rock, Paper, Scissors</h2>
-            <img src="/Week_3/swe-hp-html-project-figueroa/Images/rock-paper-scissors.jpg" alt=""/>
-            <p>Description</p>
-        </div>
-        <div class="listed-project">
-            <h2>Cash Register Project</h2>
-            <img src="/Week_3/swe-hp-html-project-figueroa/Images/Cash-Register.jpg" alt=""/>
-            <p>Description</p>
-        </div>
-    </div>
+    <main class="home-content">
+        <h1>
+            <span class ="top-text">Hello, I'm Juan.</span>
+            <span class ="bottom-text">I'm a  Software Application Development Apprentice.</span>
+        </h1>
+        <img src="/Week_3/swe-hp-html-project-figueroa/Images/headshot.jpg" alt="Juan Figueroa">
+    </main>
 </body>
 <div id="footer"></div>
 </html>

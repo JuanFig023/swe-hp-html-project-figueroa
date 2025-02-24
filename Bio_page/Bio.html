@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Figueroa Biography</title>
+    <link rel="stylesheet" href="Bio.css">
+    <script>
+        fetch('/Week_3/swe-hp-html-project-figueroa/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <script>
+        fetch('/Week_3/swe-hp-html-project-figueroa/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div class="biography">
         <h1>About Me</h1>
         <p class="description-jf">Hi, I'm Juan Figueroa, a Software Application Development Apprentice at HP based in Houston, TX. 
@@ -16,4 +28,5 @@
         </p>
     </div>
 </body>
+<div id="footer"></div>
 </html>

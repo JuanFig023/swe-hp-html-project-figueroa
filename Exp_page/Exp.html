@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juan Figueroa Experience</title>
+    <script>
+        fetch('/Week_3/swe-hp-html-project-figueroa/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <script>
+        fetch('/Week_3/swe-hp-html-project-figueroa/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div class="all-experiences">
         <h1>Experience</h1>
         <div class="listed-experience">
@@ -26,7 +37,5 @@
         </div>
     </div>
 </body>
-<footer>
-    <p>&copy; 2025 Juan Figueroa</p>
-</footer>
+<div id="footer"></div>
 </html>
