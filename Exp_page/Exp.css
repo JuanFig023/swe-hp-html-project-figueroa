@@ -1,0 +1,34 @@
+.all-experiences{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e0f7fa;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.1);
+    font-family: 'inter', sans-serif;
+    color: rgb(0,119,181);
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    
+    font-size: 1.25em;
+}
+
+.listed-experience{
+    border-bottom: 1px solid rgb(0,119,181);
+    padding-bottom: 15px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.date{
+    font-size: 1em;
+    font-weight: lighter;
+}
+
